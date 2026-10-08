@@ -31,7 +31,7 @@ def validate_student_data(
     if not name or len(name.strip()) < 2:
         return False, "Full Name must be at least 2 characters long."
 
-    if not re.match(r"^[A-Za-z\s.'-]+$", name.strip()):
+    if not re.match(r"^[A-Za-z0-9\s.'\-()]+$", name.strip()):
         return False, "Student Name contains invalid characters."
 
     # Email validation
