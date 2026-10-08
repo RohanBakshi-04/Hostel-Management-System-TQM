@@ -53,7 +53,7 @@ def bootstrap_application():
         conn.close()
 
     print("------------------------------------------------------------------")
-    print("⚡ System Ready. Launching GUI Application...")
+    print("[Q05] System Ready. Launching GUI Application...")
     print("------------------------------------------------------------------")
 
 
