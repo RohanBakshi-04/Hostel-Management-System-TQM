@@ -100,6 +100,10 @@ class AllocationService:
 
             return True, f"Room {room_row['room_number']} allocated to {student_row['name']} successfully.", new_id
         except Exception as e:
+            try:
+                conn.rollback()
+            except Exception:
+                pass
             return False, f"Allocation transaction failed: {str(e)}", None
         finally:
             if not self.db_conn:
