@@ -173,13 +173,19 @@ Hostel Management System TQM/
 - Standard Python 3.8+ installed on Windows, macOS, or Linux.
 - Tkinter library support (pre-installed by default with official Python installers on Windows).
 
-### 1. Launch the Application
+### 1. Clone the Repository
+```bash
+git clone https://github.com/RohanBakshi-04/Hostel-Management-System-TQM.git
+cd Hostel-Management-System-TQM
+```
+
+### 2. Launch the Application
 ```bash
 python -m app.main
 ```
 *Upon launch, the application automatically creates `data/hostel.db`, applies normalized table schemas, creates Q05 B-Tree indexes, and seeds sample data.*
 
-### 2. Run the Automated Test Suite & Benchmarks
+### 3. Run the Automated Test Suite & Benchmarks
 ```bash
 python -m unittest discover tests
 ```
